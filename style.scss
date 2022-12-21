@@ -1,0 +1,59 @@
+@import 'vars';
+
+@mixin theme($theme: DarkGray) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: $red;
+}
+
+body {
+        
+    .row-1 {
+        font-family: $main_font;
+        color: $blue;
+        font-weight: bold;
+
+        .col-4 {
+            border: $red solid 1px;
+            margin: 10px;
+            padding: 10px;
+            font-size: 10px;
+            max-width: 31%;
+        }
+    }
+
+    .row-2 {
+        @extend .row-1;
+        .col {
+                @extend .col-4;
+                max-width: 100%;
+                font-size: 30px;
+            }
+        }
+
+        .row-3 {
+            p {
+                @include theme;
+                padding: 10px;
+                margin: 10px;  
+                &:first-child {
+                    @include theme($theme:yellow);
+                }
+                &:nth-child(3) {
+                    @include theme($theme:darkblue);
+                }
+                &:last-child {
+                    @include theme($theme:yellow);
+                }
+
+            }
+            
+            
+            a {
+                padding: 10px;
+                margin: 10px;
+            }
+        }
+    }
+   
+    

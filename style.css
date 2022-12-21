@@ -1,0 +1,54 @@
+body .row-1, body .row-2 {
+  font-family: "Comic Neue", sans-serif;
+  color: #0000FF;
+  font-weight: bold;
+}
+
+body .row-1 .col-4, body .row-2 .col-4, body .row-2 .col {
+  border: #FF0000 solid 1px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 10px;
+  max-width: 31%;
+}
+
+body .row-2 .col {
+  max-width: 100%;
+  font-size: 30px;
+}
+
+body .row-3 p {
+  background: DarkGray;
+  -webkit-box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+          box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #FF0000;
+  padding: 10px;
+  margin: 10px;
+}
+
+body .row-3 p:first-child {
+  background: yellow;
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 0, 0.25);
+          box-shadow: 0 0 1px rgba(255, 255, 0, 0.25);
+  color: #FF0000;
+}
+
+body .row-3 p:nth-child(3) {
+  background: darkblue;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 139, 0.25);
+          box-shadow: 0 0 1px rgba(0, 0, 139, 0.25);
+  color: #FF0000;
+}
+
+body .row-3 p:last-child {
+  background: yellow;
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 0, 0.25);
+          box-shadow: 0 0 1px rgba(255, 255, 0, 0.25);
+  color: #FF0000;
+}
+
+body .row-3 a {
+  padding: 10px;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
